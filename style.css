@@ -135,17 +135,12 @@ body {
 
 @media only screen and (orientation: landscape) {
 
-    /* body {
-        background-color: lightblue;
-    } */
-
+    .overlay-content {
+        top: 10%;
+    }
 }
 
 @media only screen and (min-width: 1040px) {
-
-    /* body {
-        background-color: plum;
-    } */
 
     .overlay, .openbtn { 
         display: none;
