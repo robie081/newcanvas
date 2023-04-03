@@ -136,7 +136,8 @@ body {
 @media only screen and (orientation: landscape) {
 
     .overlay-content {
-        top: 10%;
+        top: 0;
+        /* top: 10%; */
     }
 }
 
