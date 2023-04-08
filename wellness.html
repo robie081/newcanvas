@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam&display=swap">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="super"> -->
+    <div id="myNav" class="overlay">
+        <div class="open">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span class="material-symbols-outlined">close</span></a> -->
+            <div class="closebtn"><span class="material-symbols-outlined" onclick="closeNav()">close</span></div>
+        </div>
+        <!-- </div>
+    <div>     -->
+        <ul class="overlay-content">
+            <li><a href="index.html">About</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a class="active" href="wellness.html">Wellness</a></li>
+            <li><a href="investing.html">Investing</a></li>
+            <li><a href="books.html">Books</a></li>
+        </ul>
+    </div>
+    <div class="open">
+        <div class="openbtn"><span class="material-symbols-outlined" onclick="openNav()">menu</span></div>
+    </div>
+        <!-- </div> -->
+    <header class="header">
+    <div class="desktop nav-wrap">  
+        <div class="logo"><span><a href="index.html"></a> timeless wisdom</span></div>
+        <ul class="second-overlay nav">
+            <li><a class="nav__link nav__link--current" href="index.html">About</a></li>
+            <li><a class="nav__link nav__link--current" href="philosophy.html">Philosophy</a></li>
+            <li><a class="nav__link nav__link--current" href="wellness.html">Wellness</a></li>
+            <li><a class="nav__link nav__link--current" href="investing.html">Investing</a></li>
+            <li><a class="nav__link nav__link--current" href="books.html">Books</a></li>
+        </ul>
+    </div>
+    </header>
+
+
+    <div id="main" class="content">
+        <div class="slideshow-container item">
+            <div class="selection">
+                <h1>Wellness</h1>
+            </div>
+            <div class="container">
+                <div class="mySlides fade">
+                    <article>
+                        <p>"Joys and love will boost your enzyme factor, sometimes in a spectacular way. Set aside a little time every day to adopt an attitude of gratitude. Laugh. Sing. Dance. Live your life, approach your work with passion and commitment, and love with all your heart." <span class="italic">dr. Hiromi Shinya</span></p>
+                        <p>Enjoy the little things, for one day you may look back and realize they were the big things.</p>
+                        <p>"You are perfectly imperfect, just as you are." <span class="italic">Beth Kempton</span></p>
+                        <p>"The hollowness and lack of genuine enjoyment of life...are familiar patterns. They are attempts at a race against time." <span class="italic">Elliot Jaques</span></p>
+                        <p>The things you own end up owning you.</p>
+                        <p>"Yesterday is history. Tomorrow is a mystery, but today is a gift. That is why it is called present." <span class="italic">Oogway</span></p>
+                        <p>"A calm and modest life brings more hapiness than the pursuit of success combined with constant restlessness." <span class="italic">Albert Einstein</span></p>
+                        <p>"For all the children to whom we may entrust the future." <span class="italic">Lois Lowry</span></p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mySlides fade">
+                    <article>            
+                        <p>Wealth is inner-peace. Find joy from within ourselves and from our relationships.</p>
+                        <p>The importance of being happy with simple things.</p>
+                        <p>Time freedom, location freedom, financial freedom and freedom from other people's expectations.</p>                                                    
+                        <p>Not all those that wander are lost.</p>
+                        <p>"No act of kindness, no matter how small, is ever wasted." <span class="italic">Aesop</span></p>
+                        <p>"Many wealthy people are little more than janitors of their own possesions." <span class="italic">Frank Wright</span></p>
+                        <p>If you remain open, joy will find you.</p>
+                        <p>"To damage the Earth is to damage your children." <span class="italic">Wendell Berry</span></p>
+                        <p>Don't worry about dying. Worry about not living. Be brave.</p>
+                        <p>Everyone must choose one of two pains: the pain of discipline or the pain of regret.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="container">
+                <div class="mySlides fade">
+                    <article>
+                        <p>"In a world that is vulnerable remain kind." <span class="italic">Oasis - short film</span></p>
+                        <p>Live on the bright side. Try to find something good in everyone, even people you don't like.</p>
+                        <p>The tree of life.</p>
+                        <p>Life goes on. People pass along. Nothing stays the same.</p>
+                        <p>Mother. Father. Always you wrestle inside me.</p>
+                        <p>There are two ways through life. The way of Nature and the way of Grace.</p>
+                        <p>It takes fierce and will to get ahead in this world.</p>
+                        <p>The only way to be happy is to love. Unless you love, your life will flash by.</p>
+                        <p>Don't let anyone tell you there's anything you can't do.</p>
+                        <p>Out of sight is out of mind.</p>
+                    </article>
+                </div> 
+            </div>
+
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

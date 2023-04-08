@@ -100,7 +100,9 @@ body {
     /* border: 3px solid green; */
     padding: 0 1em 0 1em;
     margin: 0 auto;
+    /* width: 1000px; */
     max-width: 1000px;
+    /* min-width: 1000px; */
 }
 
 .selection {
@@ -123,11 +125,11 @@ body {
 }
 
 .selection.about {
-    margin-top: 2em;
+    margin-top: 1.5em;
 }
 
 .container.about {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .position {
@@ -159,6 +161,42 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.list {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.list li::before {
+    content: "\2022";
+    color: #888;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: 2em;
+}  
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+table {
+    border-collapse: collapse;  
+    margin-left: 0px;
+}
+
+td {
+    font-size: 1rem;
+    padding: 5px 18px 5px 18px; 
+    border-bottom:1px solid #ccc; 
+    line-height: 16px;
 }
 
 @media only screen and (orientation: landscape) {
@@ -283,31 +321,39 @@ body {
     }
 
 
-    .head {
-        /* border: 3px solid lightgareen; */
-        /* visibility: visible; */
+    /* .head {
+        border: 3px solid lightgareen;
+        visibility: visible;
         display: block;
         font-weight: 400;
         display: flex;
         justify-content: center;
         padding: 1em 0;
 
-    }
+    } */
 
-    .stubborn {
-        /* border: 3px solid orange; */
+    /* .stubborn {
+        border: 3px solid orange;
         width: 1000px;
         padding-left: 1em;
         margin-top: 4em;
-    }
+    } */
 
-    .head h1 {
+    /* .head h1 {
         font-size: 20px;
         padding-bottom: 1em;
+    } */
+
+    /* .head h2 {
+        font-size: 18px;
+    } */
+
+    .selection.about {
+        margin-top: 1em;
     }
 
-    .head h2 {
-        font-size: 18px;
+    .container.about {
+        margin-top: 1em;
     }
 
     .logo span {
@@ -320,4 +366,8 @@ body {
         color: #8b19d7;
         cursor: pointer;
     }
+
+    .active, .dot:hover {
+        box-shadow: 0 0 2px 1px black;
+      }
 }
