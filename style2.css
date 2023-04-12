@@ -1,4 +1,7 @@
 
+/* newcanvas deployed on github newcanvas */
+/* https://robie081.github.io/newcanvas/index.html */
+
 *, 
 *::after,
 *::before {
@@ -14,27 +17,9 @@ html {
 }
 
 body {
-    /* border: 3px solid plum; */
-    font-weight: 300;
-    font-size: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
-.super {
-    /* border: 3px solid black; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* max-width: 64.5em; */
-    width: 64.5em;
-    margin: 0 auto;
-}
-
-.head {
-    /* border: 3px solid lightblue; */
-    /* flex-grow: 1; */
+  font-weight: 300;
+  font-size: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .overlay {
@@ -62,6 +47,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     font-size: 1.1rem;
+    font-weight: 400;
     line-height: 1.8rem;
     color: black;
     display: block; 
@@ -88,36 +74,26 @@ body {
     'GRAD' 0,
     'opsz' 48;
     font-size: 32px;
-}
+  }
 
 .desktop {
     display: none;
 }
 
-.content {
-    /* border: 3px solid orange; */
-    /* flex-grow: 1; */
-    /* flex-basis: 70em; */
-    /* display: flex; */
-    /* justify-content: center; */
-}
+/* .head {
+    display: none;
+} */
 
 .slideshow-container {
-    /* border: 3px solid blue; */
     padding: 0 1em 0 1em;
-    /* margin: 0 auto; */
-    /* max-width: 1000px; */
-    /* max-width: 64em; */
-    /* width: 64em; */
-    /* width: auto; */
-    
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .selection {
-    /* border: 3px solid red; */
     font-size: 20px;
     font-weight: 400;
-    padding: 1em 0 1em 1em;
+    padding: 2em 0 1em 1em;
 }
 
 .container {
@@ -137,8 +113,7 @@ body {
 }
 
 .position {
-    /* border: 3px solid black; */
-    padding: 1em 1em;
+    padding: 2em 1em;
 }
 
 .position p:last-child {
@@ -154,7 +129,7 @@ body {
 .dots {
   text-align: center;
   margin: 0.6rem 1.6rem;
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 
 .dot {
@@ -200,19 +175,8 @@ table {
 td {
     font-size: 1rem;
     padding: 5px 18px 5px 18px; 
-    border-bottom: 1px solid #ccc; 
-    line-height: 1.2em;
-}
-
-article:last-child {
-    margin-bottom: 1em;
-}
-
-.foot {
-    /* border: 3px solid lightgreen; */
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    border-bottom:1px solid #ccc; 
+    line-height: 16px;
 }
 
 @media only screen and (orientation: landscape) {
@@ -228,10 +192,9 @@ article:last-child {
     .container.about {
         margin-top: 0;
     }
-
 }
 
-@media only screen and (min-width: 64.5em) {
+@media only screen and (min-width: 1040px) {
 
     .overlay, .openbtn { 
         display: none;
@@ -247,10 +210,9 @@ article:last-child {
     }
 
     .nav-wrap {
-        /* border: 3px solid violet; */
-        /* margin: 0 auto; */
-        /* max-width: 1100px; */
-        padding: 0 1em;
+        margin: 0 auto;
+        max-width: 1100px;
+        padding: 0 16px;
     }
 
     .nav {
@@ -312,17 +274,19 @@ article:last-child {
         width: 100%;
     }
 
+    /* Main */
+
     .content {
         display: flex;
         flex-direction: column;
     }
 
     .selection.about {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .container.about {
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .logo span {
@@ -335,11 +299,7 @@ article:last-child {
         cursor: pointer;
     }
 
-    .logo span a {
-        text-decoration: none;
-    }
-
     .active, .dot:hover {
         box-shadow: 0 0 2px 1px black;
-    }
+      }
 }
