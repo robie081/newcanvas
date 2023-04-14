@@ -215,7 +215,7 @@ article:last-child {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    padding: .5em 0 1em 0;
+    padding: .5em 0 2em 0;
 }
 
 @media only screen and (orientation: landscape) {
