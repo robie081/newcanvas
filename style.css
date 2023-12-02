@@ -23,18 +23,8 @@ body {
 }
 
 .super {
-    /* border: 3px solid black; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* max-width: 64.5em; */
     width: 64.5em;
     margin: 0 auto;
-}
-
-.head {
-    /* border: 3px solid lightblue; */
-    /* flex-grow: 1; */
 }
 
 .overlay {
@@ -94,24 +84,9 @@ body {
     display: none;
 }
 
-.content {
-    /* border: 3px solid orange; */
-    /* flex-grow: 1; */
-    /* flex-basis: 70em; */
-    /* display: flex; */
-    /* justify-content: center; */
-
-}
-
 .slideshow-container {
     /* border: 3px solid blue; */
     padding: 0 1em 0 1em;
-    /* margin: 0 auto; */
-    /* max-width: 1000px; */
-    /* max-width: 64em; */
-    /* width: 64em; */
-    /* width: auto; */
-    
 }
 
 .selection {
@@ -151,12 +126,11 @@ body {
 .italic {
     font-size: 0.937em; 
     font-style: italic;
-  }
+}
 
 .dots {
   text-align: center;
   margin: 0.6rem 1.6rem;
-  /* padding: 2rem; */
 }
 
 .dot {
@@ -190,8 +164,8 @@ body {
 }
 
 @keyframes fade {
-    from {opacity: 0.4} 
-    to {opacity: 1}
+    from { opacity: 0.4 } 
+    to { opacity: 1 }
 }
 
 table {
@@ -218,15 +192,15 @@ article:last-child {
     padding: .5em 0 2em 0;
 }
 
+.activation, .dot:hover {
+    box-shadow: 0 0 2px 1px black;
+}
+
 @media only screen and (orientation: landscape) {
 
     .overlay-content {
         top: 0;
     }
-
-    /* .selection.about {
-        margin-top: 0;
-    } */
 
     .container.about {
         margin-top: 0;
@@ -250,9 +224,6 @@ article:last-child {
     }
 
     .nav-wrap {
-        /* border: 3px solid violet; */
-        /* margin: 0 auto; */
-        /* max-width: 1100px; */
         padding: 0 1em;
     }
 
@@ -332,17 +303,18 @@ article:last-child {
         position: relative;
         top: 29px;
         left: 20px;
-        font-family: Kalam;
-        font-size: 1.5em;
+        font-family: 'Dancing Script', serif;
+        font-size: 2.5em;
         color: #8b19d7;
         cursor: pointer;
+        letter-spacing: 2px;
     }
 
     .logo span a {
         text-decoration: none;
     }
 
-    .active, .dot:hover {
+    /* .active, .dot:hover {
         box-shadow: 0 0 2px 1px black;
-    }
+    } */
 }
