@@ -54,7 +54,8 @@ body {
     font-weight: 900;
     line-height: 1.8rem;
     padding: 0.6rem;
-    color: #1f2937;
+    /* color: #1f2937; */
+    color: #8b19d7;
     text-decoration: none;
     transition: 0.3s; 
 }
